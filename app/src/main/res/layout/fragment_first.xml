@@ -8,12 +8,26 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview1"
-        android:layout_width="389dp"
-        android:layout_height="322dp"
+        android:layout_width="390dp"
+        android:layout_height="318dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerview1"
+        tools:layout_editor_absoluteY="252dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

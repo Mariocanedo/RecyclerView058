@@ -46,6 +46,41 @@ public class FirstFragment extends Fragment {
 
         binding.recyclerview1.setLayoutManager(new LinearLayoutManager(getContext()));
         binding.recyclerview1.setHasFixedSize(true);
+
+
+
+        /******************LÓGICA del button****************/
+
+
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                datalist.add("PALABRA"+ datalist.size());
+                // notoficar al adapter que insertamos datos
+
+                binding.recyclerview1.getAdapter().notifyItemInserted(datalist.size());
+                // scroll al final de la lista
+                binding.recyclerview1.smoothScrollToPosition(datalist.size());
+
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 
